@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>A:BC Demo</title>
+<title>Dashboard</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +10,16 @@
 <body>
 <center>
 
-<h1 class="title">A:BC Demo</h1>
+<h1 class="title">Proxy Embedder</h1>
 <textarea id="code" spellcheck="false">
-//Creates new ABC
-var page = new ABC({
+//Creates new Embed
+var page = new Embed({
     "type": "blank", //Blank, blob, or overwrite
     "url": "https://example.com" //Any url
 })
-//Set the type
 page.setType("blank")
-//Set the url
-page.setUrl("https://example.com")
-//Get iframe code
+page.setUrl("https://example.com") //CHANGE THIS TO THE PROXY YOU WANT
 console.log(page.getCode())
-//Open page
 page.open()</textarea>
 
 <br>
@@ -32,10 +28,10 @@ page.open()</textarea>
 </center>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap';
 
 * {
-font-family: "Roboto";
+font-family: "Open Sans";
 }
 
 center {
@@ -48,7 +44,7 @@ font-size: 60px;
 }
 
 body {
-background-color: #2d2f31;
+background-color: #131240;
 color: darkgrey;
 -webkit-text-stroke: 0.01px lightgrey;
 }
